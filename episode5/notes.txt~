@@ -1,0 +1,17 @@
+require 'sinatra'
+require 'haml'
+get '/' do
+  haml :index
+end
+
+
+!!!
+%html
+  %head
+    %title Index Page
+  %body
+    %h1 Hello there
+    %p
+      The current time is:
+      = Time.now
+

@@ -1,0 +1,22 @@
+Template Main.rb:
+
+require 'sinatra'
+require 'haml'
+
+get '/' do
+  haml :index
+end
+
+
+views/index.haml:
+
+!!!
+%html
+  %head
+    %title Index Page
+  %body
+    %h1 Hello there
+    %p
+      The current time is:
+      = Time.now
+
